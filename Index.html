@@ -51,15 +51,15 @@
             <br>
             <div class="fot">
               <div class="for"> 
-                <form application method = get action = xyz.html>
-                  Enter email: <br><input type="email" placeholder= "@gmail.com"required><br><br>
-                  Enter full name: <br><Input type = "text" maxlength="30" placeholder= "abc def ghi" required><br><br>
-                  Enter mobile no: <br><input type="tel" pattern="[0-9]{10}" required><br><br>
-                  Enter address: <br><textarea rows = 1 placeholder= "permanant address" required></textarea><br><br>
-                  Date of birth: <br><input type="date" required> <br><br>
+                <form method="post" action = connect.php>
+                  Enter email: <br><input type="email" placeholder= "@gmail.com" required name="email"><br><br>
+                  Enter full name: <br><Input type = "text" maxlength="30" placeholder= "abc def ghi" required name="name"><br><br>
+                  Enter mobile no: <br><input type="tel" required name="mobile"><br><br>
+                  Enter address: <br><textarea rows = 1 placeholder= "permanant address" required name="address"></textarea><br><br>
+                  Date of birth: <br><input type="date" required name="dob"> <br><br>
                   <input type="button" value = CLEAR>
                   <input type="reset" value = RESET>
-                  <input type="submit" value = SUBMIT>
+                  <input type="submit" name="submit" id="submit" value="Submit">
                 </form>
               </div>
               <div class="ad">
@@ -70,6 +70,10 @@
              but can help him to discover it within himself".</p>
               </div>
             </div><br><br>
+          
+            <div style="text-align: center; border-color: rgb(127, 239, 16); border-radius: 10px;">
+              <a href="https://www.w3schools.com/xml/tryxslt.asp?xmlfile=cdcatalog&xsltfile=cdcatalog" style="font-size:larger; color:white; background-color: black; cursor: pointer; font-size: x-large; border-color: rgb(127, 239, 16); border-radius: 10px; ">Click here to view XML to html example</a>
+            </div>
 
             <p style="color:rgb(197, 240, 7); text-align: center;font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;font-size: xx-large; font-weight: 900;">Our Faculty Members</p>
             <br><br>
@@ -137,6 +141,6 @@
         </footer> 
 
     </div>
-
+    <script src="validation.js"></script>
   </body>
 </html>
